@@ -1,0 +1,4 @@
+http://www.dpoint.cc/2017/12/26/Linux之HA高可用集群/
+http://www.dpoint.cc/2017/12/26/Linux之时间服务/
+http://www.dpoint.cc/2017/12/26/Oracle之Linux环境安装/
+http://www.dpoint.cc/2017/12/24/hello-world/
