@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>SkyNet&#39;s Notes</title>
   
-  
+  <subtitle>凡心所向，素履以往！,生如逆旅，一苇以航！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.dpoint.cc/"/>
-  <updated>2018-06-21T05:50:09.700Z</updated>
+  <updated>2018-06-21T05:49:53.328Z</updated>
   <id>http://www.dpoint.cc/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Redhat HA高可用集群架设</title>
+    <link href="http://www.dpoint.cc/2017/12/26/Linux%E4%B9%8BHA%E9%AB%98%E5%8F%AF%E7%94%A8%E9%9B%86%E7%BE%A4/"/>
+    <id>http://www.dpoint.cc/2017/12/26/Linux之HA高可用集群/</id>
+    <published>2017-12-26T12:32:45.000Z</published>
+    <updated>2018-06-21T05:49:53.328Z</updated>
+    
+    <content type="html"><![CDATA[<p>echo ‘192.168.8.100 node001’ &gt;&gt; /etc/hosts<br>echo ‘192.168.8.101 node002’ &gt;&gt; /etc/hosts<br>echo ‘192.168.8.102 node003’ &gt;&gt; /etc/hosts</p><a id="more"></a><p>ssh-keygen -t rsa -f ~/.ssh/id_rsa -P ‘’</p><p>ssh-copy-id -i ~/.ssh/id_rsa.pub node002</p><p>clustat -i 1<br>clusvcadm -d 88<br>clusvcadm -e 88</p><p>chkconfig cman on<br>chkconfig ricci on<br>chkconfig luci on<br>chkconfig rgmanager on<br>chkconfig modclusterd on<br>chkconfig clvmd on</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;echo ‘192.168.8.100 node001’ &amp;gt;&amp;gt; /etc/hosts&lt;br&gt;echo ‘192.168.8.101 node002’ &amp;gt;&amp;gt; /etc/hosts&lt;br&gt;echo ‘192.168.8.102 node003’ &amp;gt;&amp;gt; /etc/hosts&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Linux之时间服务器配置</title>
@@ -38,24 +56,6 @@ echo &amp;apos;ntpdate -bu 172.255.246.13&amp;apos; &amp;gt;&amp;gt;/etc/rc.loca
 echo &amp;apos;ntpdate -bu 85.199.214.101&amp;apos; &amp;gt;&amp;gt;/etc/rc.local
 echo &amp;apos;ntpdate -bu 85.199.214.100&amp;apos; &amp;gt;&amp;gt;/etc/rc.local
 &lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Redhat HA高可用集群架设</title>
-    <link href="http://www.dpoint.cc/2017/12/26/Linux%E4%B9%8BHA%E9%AB%98%E5%8F%AF%E7%94%A8%E9%9B%86%E7%BE%A4/"/>
-    <id>http://www.dpoint.cc/2017/12/26/Linux之HA高可用集群/</id>
-    <published>2017-12-26T12:32:45.000Z</published>
-    <updated>2018-06-21T05:49:53.328Z</updated>
-    
-    <content type="html"><![CDATA[<p>echo ‘192.168.8.100 node001’ &gt;&gt; /etc/hosts<br>echo ‘192.168.8.101 node002’ &gt;&gt; /etc/hosts<br>echo ‘192.168.8.102 node003’ &gt;&gt; /etc/hosts</p><a id="more"></a><p>ssh-keygen -t rsa -f ~/.ssh/id_rsa -P ‘’</p><p>ssh-copy-id -i ~/.ssh/id_rsa.pub node002</p><p>clustat -i 1<br>clusvcadm -d 88<br>clusvcadm -e 88</p><p>chkconfig cman on<br>chkconfig ricci on<br>chkconfig luci on<br>chkconfig rgmanager on<br>chkconfig modclusterd on<br>chkconfig clvmd on</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;echo ‘192.168.8.100 node001’ &amp;gt;&amp;gt; /etc/hosts&lt;br&gt;echo ‘192.168.8.101 node002’ &amp;gt;&amp;gt; /etc/hosts&lt;br&gt;echo ‘192.168.8.102 node003’ &amp;gt;&amp;gt; /etc/hosts&lt;/p&gt;
     
     </summary>
     
